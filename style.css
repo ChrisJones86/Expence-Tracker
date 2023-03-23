@@ -1,5 +1,7 @@
 :root {
-    --box-shadow: 0px 1px 4px 1px #a5a4a4;
+    --box-shadow: 0px 1px 4px 1px #a5a4a4; 
+    --income: green;
+    --expense: red; 
 }
 
 body {
@@ -15,13 +17,23 @@ body {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.2em, bold;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.balance-container {
+    display:block;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
 
-.balance-container #balance {
-    font-size: 1.5em;
+#balance {
+    font-size: 1.8em;
+    justify-content: right;
 }
 
 .cashflow-container {
@@ -39,20 +51,20 @@ h2 {
     padding-right: 20px;
 }
 
-.expence-container {
+.expense-container {
     padding-left: 20px;
 }
 
-#income, #expence {
+#income, #expense {
     font-size: 1.3em;
 }
 
 #income {
-    color: #06b400;
+    color: var(--income);
 }
 
-#expence {
-    color: rgb(207, 0, 0);
+#expense {
+    color: var(--expense);
 }
 
 .transaction-container {
@@ -84,15 +96,15 @@ h2 {
 
 #transaction li .income-amt {
     display: inline-block;
-    background-color: #06b400;
+    background-color: var(--income);
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
 }
 
-#transaction li .expence-amt {
+#transaction li .expense-amt {
     display: inline-block;
-    background-color: rgb(207, 0, 0);
+    background-color: var(--expense);
     color: #ffffff;
     padding: 5px;
     border-radius: 3px;
@@ -130,9 +142,9 @@ h2 {
 }
 
 #incomeBtn {
-    background-color: #06b400;
+    background-color: var(--income);
 }
 
-#expenceBtn {
-    background-color: rgb(207, 0, 0);
+#expenseBtn {
+    background-color: var(--expense);
 }
