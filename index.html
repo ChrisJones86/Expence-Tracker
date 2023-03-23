@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <title>Expence Tracker</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Expence Tracker</h1>
+            <div class="balance-counter">
+                <h2>Your Balance</h2>
+                <div id="balance">$1000</div>
+            </div>
+
+            <div class="cashflow">
+                <div class="income-countainer">
+                    <h2>Income</h2>
+                    <div id="income">$1200</div>
+                </div>
+                <div class="expence-container">
+                    <h2>Expence</h2>
+                    <div id="expence">$200</div>
+                </div>
+            </div>
+            <div class="transaction-container">
+                <h2>Transaction History</h2>
+                <ul>
+                    <li>
+                        Salary
+                        <div>
+                            <span class="income-amt">$25000</span>
+                            <button>X</button>
+                        </div>
+                    </li>
+                    <li>
+                        Pay Morgage
+                        <div>
+                            <span class="income-amt">$3500</span>
+                            <button>X</button>
+                        </div>
+                    </li>
+                    <li>
+                        Buy Fishing Gear
+                        <div>
+                            <span class="expence-amt">$2000</span>
+                            <button>X</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-container">
+                <h2>Add New Transaction</h2>
+                <form onsubmit="return false;">
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="text">
+                    <button id="incomeBtn">Add Income</button>
+                    <button id="expenceBtn">Add Expence</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
