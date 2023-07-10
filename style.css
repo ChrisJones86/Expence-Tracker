@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Rubik', 'san-serif';
+    font-family:Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,12 +18,13 @@ body {
 
 h2 {
     font-size: 1.2em, bold;
-    text-transform: uppercase;
     margin-bottom: 10px;
 }
 .balance-container {
     display:block;
     box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
@@ -39,6 +40,8 @@ h2 {
 .cashflow-container {
     display: flex;
     box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
@@ -49,10 +52,12 @@ h2 {
 .income-container {
     border-right: 1px solid #ccc;
     padding-right: 20px;
+    border-radius: 10px;
 }
 
 .expense-container {
     padding-left: 20px;
+    border-radius: 10px;
 }
 
 #income, #expense {
@@ -69,9 +74,11 @@ h2 {
 
 .transaction-container {
     margin-top: 40px;
+    border-radius: 10px;
 }
 
 #transaction {
+    border-radius: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -83,6 +90,7 @@ h2 {
     justify-content: space-between;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
 
@@ -112,24 +120,31 @@ h2 {
 
 #transaction li button {
     padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    box-shadow: none;
 }
 
 .form-container {
     margin-top: 40px;
+    border-radius: 10px;
+    font-size: medium;
 }
 
 .form-container form {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .form-container form label {
     padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 .form-container form input {
     height: 25px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .form-container form button {
@@ -137,14 +152,10 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
     font-size:  1.2em;
-    text-transform: uppercase;
     color: #ffff;
+    border-radius: 10px;
 }
 
-#incomeBtn {
-    background-color: var(--income);
-}
-
-#expenseBtn {
-    background-color: var(--expense);
+#name, #amount {
+    font-size: medium;
 }

@@ -4,7 +4,7 @@ var state = {
     expense: 1000,
     transactions: [
         { id: uniqueId(), name: 'Pay Check', amount: 25000, type: 'income' },
-        { id: uniqueId(), name: 'Pay Morgage', amount: 3500, type: 'expense'},
+        { id: uniqueId(), name: 'Pay Mortgage', amount: 3500, type: 'expense'},
         { id: uniqueId(), name: 'Buy Fishing Gear', amount: 2000, type: 'expense'},
     ]
 }
